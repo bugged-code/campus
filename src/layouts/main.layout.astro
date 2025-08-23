@@ -1,0 +1,23 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+}
+
+const { title = "Mi Campus | Gusstavo" } = Astro.props as Props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/campus/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="author" content="bit-exploit" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<article
+  tabindex="0"
+  id="section-container"
+  class="w-full h-dvh outline-none overflow-x-hidden overflow-y-auto snap-y snap-mandatory [&>section]:w-full [&>section]:h-dvh [&>section]:overflow-x-hidden [&>section]:overflow-y-auto [&>section]:snap-start"
+>
+  <slot />
+</article>
+
+<script>
+  const container: HTMLElement | null =
+    document.getElementById("section-container");
+
+  container?.focus();
+</script>
+
+<style>
+  #section-container {
+    scrollbar-width: none;
+  }
+</style>

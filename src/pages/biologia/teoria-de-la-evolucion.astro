@@ -1,0 +1,88 @@
+---
+import MainLayout from "../../layouts/main.layout.astro";
+import Slider from "../../components/slider.component.astro";
+import Section from "../../components/biologia/act1-section.component.astro";
+---
+
+<MainLayout title="Act 1 | Teoría de la evolución">
+  <Slider>
+    <!-- section 1 -->
+    <Section
+      date="1715"
+      title="Teoría Fijista"
+      imageBg="/campus/biologia/section-1-0.webp"
+      author="Tradición científica antigua."
+    >
+      <img
+        class="relative object-cover w-lg md:w-2xl mx-auto rounded-2xl"
+        src="/campus/biologia/section-1-1.webp"
+        alt="section-1-0"
+      />
+      <p class="text-2xl md:text-3xl text-center text-pretty">
+        Las especies nunca cambian, siempre fueron iguales.
+      </p>
+    </Section>
+    <!-- section 2 -->
+    <Section
+      date="1809"
+      title="Teoría de Lamarck"
+      author="Jean-Baptiste Lamarck."
+      imageBg="/campus/biologia/section-2-0.webp"
+    >
+      <img
+        class="relative object-cover w-lg md:w-2xl mx-auto rounded-2xl"
+        src="/campus/biologia/section-2-1.webp"
+        alt="section-2-1"
+      />
+      <p class="text-2xl md:text-3xl text-center text-pretty">
+        Si usas un órgano, se desarrolla; si no, se atrofia (y eso se hereda).
+      </p>
+    </Section>
+    <!-- section 3 -->
+    <Section
+      date="1859"
+      title="Teoría de Darwin-Wallace"
+      author="Charles Darwin & Alfred Russel Wallace."
+      imageBg="/campus/biologia/section-3-0.webp"
+    >
+      <img
+        class="relative object-cover w-lg md:w-2xl mx-auto rounded-2xl"
+        src="/campus/biologia/section-3-1.webp"
+        alt="section-3-1"
+      />
+      <p class="text-2xl md:text-3xl text-center text-pretty">
+        Sobrevive el más apto, no el más fuerte.
+      </p>
+    </Section>
+    <Section
+      date="1889"
+      title="Refutación de Weismann"
+      author="August Weismann."
+      imageBg="/campus/biologia/section-4-0.webp"
+    >
+      <img
+        class="relative object-cover w-lg md:w-2xl mx-auto rounded-2xl"
+        src="/campus/biologia/section-4-1.webp"
+        alt="section-4-1"
+      />
+      <p class="text-2xl md:text-3xl text-center text-pretty">
+        Lo que haces en vida no lo heredan tus hijos.
+      </p>
+    </Section>
+    <Section
+      date="1930-1950"
+      title="1930-1950 — Teoría Sintética (Neodarwinismo)"
+      author="Varios científicos (genetistas, paleontólogos)."
+      imageBg="/campus/biologia/section-5-0.webp"
+    >
+      <img
+        class="relative object-cover w-lg md:w-2xl mx-auto rounded-2xl"
+        src="/campus/biologia/section-5-1.webp"
+        alt="section-5-1"
+      />
+      <p class="text-2xl md:text-3xl text-center text-pretty">
+        Evolución = genes + selección natural + fósiles
+      </p>
+    </Section>
+  </Slider>
+</MainLayout>
