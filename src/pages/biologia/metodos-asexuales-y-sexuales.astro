@@ -94,7 +94,7 @@ import Slider from "../../components/slider.component.astro";
     </section>
 
     <!-- SECTION 3 -->
-    <section class="bg-neutral-700">
+    <section class="bg-neutral-800">
       <div class="relative w-full min-h-dvh">
         <!-- video de fondo (gif) -->
         <video
@@ -176,7 +176,7 @@ import Slider from "../../components/slider.component.astro";
     </section>
 
     <!-- SECTION 4 -->
-    <section class="bg-neutral-600">
+    <section class="bg-neutral-800">
       <div class="relative w-full min-h-dvh py-20">
         <!-- video de fondo (gif) -->
         <video
@@ -198,20 +198,27 @@ import Slider from "../../components/slider.component.astro";
           <ul
             class="grid justify-end text-2xl lg:justify-normal lg:text-center [&>li]:min-w-sm [&>li]:p-8"
           >
-            <li class="bg-yellow-300/70 transition hover:scale-110">
+            <li class="bg-yellow-300/70 transition hover:scale-110 grid">
               <b>Gemación</b>
+              <span>Ejemplo: Hidras (animales acuáticos) o levaduras</span>
             </li>
-            <li class="bg-green-300/70 transition hover:scale-110">
+            <li class="bg-green-300/70 transition hover:scale-110 grid">
               <b>Bipartición</b>
+              <span>Ejemplo: Bacterias como E. coli</span>
             </li>
-            <li class="bg-blue-300/70 transition hover:scale-110">
+            <li class="bg-blue-300/70 transition hover:scale-110 grid">
               <b>Fragmentación</b>
+              <span>Ejemplo: Estrellas de mar, lombrices planarias</span>
             </li>
-            <li class="bg-red-300/70 transition hover:scale-110">
+            <li class="bg-red-300/70 transition hover:scale-110 grid">
               <b>Esporulación</b>
+              <span>Ejemplo: Hongos como el moho (Rhizopus)</span>
             </li>
-            <li class="bg-purple-300/70 transition hover:scale-110">
+            <li class="bg-purple-300/70 transition hover:scale-110 grid">
               <b>Partenogénesis</b>
+              <span
+                >Ejemplo: Abejas (zánganos), algunos reptiles como lagartijas</span
+              >
             </li>
           </ul>
         </div>
@@ -219,7 +226,7 @@ import Slider from "../../components/slider.component.astro";
     </section>
 
     <!-- SECTION 5 -->
-    <section class="bg-neutral-500">
+    <section class="bg-neutral-800">
       <div class="relative w-full min-h-dvh">
         <!-- video de fondo (gif) -->
         <video
@@ -295,6 +302,50 @@ import Slider from "../../components/slider.component.astro";
               </h4>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section class="bg-neutral-800">
+      <div class="relative w-full min-h-dvh py-20">
+        <!-- video de fondo (gif) -->
+        <video
+          id="bgVideo"
+          playsinline
+          autoplay
+          muted
+          loop
+          class="w-full h-full object-cover absolute top-0 left-0 opacity-50"
+        >
+          <source src="/campus/biologia/celulas-5.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+
+        <div class="relative grid gap-8 md:text-center mb-8">
+          <h1 class="text-5xl lg:text-6xl font-extrabold text-zinc-100">
+            Procesos de la Reproducción Sexual
+          </h1>
+          <ul
+            class="grid justify-end text-2xl lg:justify-normal lg:text-center [&>li]:min-w-sm [&>li]:p-8"
+          >
+            <li class="bg-yellow-300/70 transition hover:scale-110 grid">
+              <b>Gametogénesis</b>
+              <span>Formación de gametos (meiosis)</span>
+            </li>
+            <li class="bg-green-300/70 transition hover:scale-110 grid">
+              <b>Fecundación</b>
+              <span>Unión de gametos → cigoto</span>
+            </li>
+            <li class="bg-blue-300/70 transition hover:scale-110 grid">
+              <b>Desarrollo embrionario</b>
+              <span>Cigoto → embrión</span>
+            </li>
+            <li class="bg-red-300/70 transition hover:scale-110 grid">
+              <b>Nacimiento</b>
+              <span>Nuevo individuo (interno o externo)</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
