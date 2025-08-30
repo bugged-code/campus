@@ -1,0 +1,102 @@
+---
+import MainLayout from "../../layouts/main.layout.astro";
+import Slider from "../../components/slider.component.astro";
+---
+
+<MainLayout title="Act3 | Reproducción">
+  <Slider>
+    <!-- SECTION 1 -->
+    <section class="bg-neutral-900">
+      <div class="relative w-full min-h-dvh">
+        <!-- video de fondo (gif) -->
+        <video
+          id="bgVideo"
+          playsinline
+          autoplay
+          muted
+          loop
+          class="w-full h-full object-cover absolute top-0 left-0 opacity-50"
+        >
+          <source src="/campus/biologia/celulas-0.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+
+        <div class="relative grid gap-8 md:text-center md:pt-48">
+          <h1 class="text-7xl lg:text-8xl font-extrabold text-zinc-100">
+            Métodos asexuales y sexuales
+          </h1>
+          <cite class="text-2xl lg:text-3xl font-light text-zinc-200"
+            >Por Gustavo Rentería</cite
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="bg-neutral-800">
+      <div class="relative w-full min-h-dvh">
+        <!-- video de fondo (gif) -->
+        <video
+          id="bgVideo"
+          playsinline
+          autoplay
+          muted
+          loop
+          class="w-full h-full object-cover absolute top-0 left-0 opacity-50"
+        >
+          <source src="/campus/biologia/celulas-1.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+
+        <div class="relative grid gap-16 p-8">
+          <h2
+            class="text-2xl lg:text-4xl rounded p-2 text-pretty text-center font-bold text-zinc-100 bg-gradient-to-r from-blue-500/50 to-purple-500/50 max-w-xl"
+          >
+            La reproducción es el proceso biológico que permite a los seres
+            vivos crear nuevos individuos, asegurando la supervivencia de la
+            especie.
+          </h2>
+          <div class="flex flex-wrap gap-8 justify-evenly">
+            <div
+              class="p-4 rounded bg-white/25 grid gap-4 transition hover:scale-105 hover:bg-white/40"
+            >
+              <p
+                class="text-zinc-50 font-bold text-4xl lg:text-6xl text-center"
+              >
+                ASEXUAL
+              </p>
+              <img
+                class="size-72 lg:size-96 object-cover rounded"
+                src="/campus/biologia/asexual.webp"
+                alt="img-asexual"
+              />
+              <cite class="text-zinc-50 text-xl lg:text-2xl"
+                >Un solo progenitor</cite
+              >
+            </div>
+            <div
+              class="p-4 rounded bg-white/25 grid gap-4 transition hover:scale-105 hover:bg-white/40"
+            >
+              <p
+                class="text-zinc-50 font-bold text-4xl lg:text-6xl text-center"
+              >
+                SEXUAL
+              </p>
+              <img
+                class="size-72 lg:size-96 object-cover rounded"
+                src="/campus/biologia/sexual.webp"
+                alt="img-asexual"
+              />
+              <cite
+                class="text-zinc-50 text-xl lg:text-2xl max-w-72 lg:max-w-96"
+                >Dos progenitores (hembra y macho)</cite
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-neutral-700"></section>
+    <section class="bg-neutral-600"></section>
+  </Slider>
+</MainLayout>
