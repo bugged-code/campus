@@ -50,16 +50,14 @@ import Slider from "../../components/slider.component.astro";
 
         <div class="relative grid gap-16 p-8">
           <h2
-            class="text-2xl lg:text-4xl rounded p-2 text-pretty text-center font-bold text-zinc-100 bg-gradient-to-r from-blue-500/50 to-purple-500/50 max-w-xl"
+            class="text-2xl lg:text-4xl rounded p-2 text-pretty text-center font-bold text-zinc-100 bg-gradient-to-r from-blue-500/20 to-purple-500/20 max-w-xl"
           >
             La reproducción es el proceso biológico que permite a los seres
             vivos crear nuevos individuos, asegurando la supervivencia de la
             especie.
           </h2>
           <div class="flex flex-wrap gap-8 justify-evenly">
-            <div
-              class="p-4 rounded bg-white/25 grid gap-4 transition hover:scale-105 hover:bg-white/40"
-            >
+            <div class="p-4 grid gap-4 transition hover:scale-105">
               <p
                 class="text-zinc-50 font-bold text-4xl lg:text-6xl text-center"
               >
@@ -74,9 +72,7 @@ import Slider from "../../components/slider.component.astro";
                 >Un solo progenitor</cite
               >
             </div>
-            <div
-              class="p-4 rounded bg-white/25 grid gap-4 transition hover:scale-105 hover:bg-white/40"
-            >
+            <div class="p-4 grid gap-4 transition hover:scale-105">
               <p
                 class="text-zinc-50 font-bold text-4xl lg:text-6xl text-center"
               >
@@ -96,7 +92,89 @@ import Slider from "../../components/slider.component.astro";
         </div>
       </div>
     </section>
-    <section class="bg-neutral-700"></section>
+
+    <!-- SECTION 3 -->
+    <section class="bg-neutral-700">
+      <div class="relative w-full min-h-dvh">
+        <!-- video de fondo (gif) -->
+        <video
+          id="bgVideo"
+          playsinline
+          autoplay
+          muted
+          loop
+          class="w-full h-full object-cover absolute top-0 left-0 opacity-50"
+        >
+          <source src="/campus/biologia/celulas-2.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+
+        <div class="relative grid gap-20 pt-20 pb-8">
+          <div class="flex max-lg:flex-wrap gap-20 lg:justify-between">
+            <h2 class="text-5xl lg:text-7xl font-extrabold text-zinc-100">
+              Reproducción Asexual
+            </h2>
+            <div
+              class="text-zinc-200 grid justify-start bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-8 rounded"
+            >
+              <h3 class="font-bold text-3xl lg:text-5xl mb-8">
+                Características
+              </h3>
+              <ul class="space-y-4 text-xl lg:text-2xl font-bold">
+                <li>- 1 progenitor</li>
+                <li>- Sin gametos</li>
+                <li>- Descendencia idéntica (clones)</li>
+                <li>- Rápida y eficiente en energía</li>
+              </ul>
+            </div>
+          </div>
+          <h3
+            class="text-center font-extrabold tracking-wider text-4xl text-zinc-50/80"
+          >
+            EJEMPLOS:
+          </h3>
+          <div class="flex flex-wrap text-zinc-100 justify-evenly gap-16 px-4">
+            <div>
+              <img
+                src="/campus/biologia/bacterias.webp"
+                alt="bacterias"
+                class="size-64 lg:size-72 object-cover rounded"
+              />
+              <h4
+                class="text-center text-2xl -translate-y-10 font-extrabold tracking-wider"
+              >
+                Bacterias
+              </h4>
+            </div>
+            <div>
+              <img
+                src="/campus/biologia/hongos.webp"
+                alt="hongos"
+                class="size-64 lg:size-72 object-cover rounded"
+              />
+              <h4
+                class="text-center text-2xl -translate-y-10 font-extrabold tracking-wider"
+              >
+                Hongos
+              </h4>
+            </div>
+            <div>
+              <img
+                src="/campus/biologia/estrella.webp"
+                alt="estrellas-de-mar"
+                class="size-64 lg:size-72 object-cover rounded"
+              />
+              <h4
+                class="text-center text-2xl -translate-y-10 font-extrabold tracking-wider"
+              >
+                Estrellas de mar
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="bg-neutral-600"></section>
   </Slider>
 </MainLayout>
