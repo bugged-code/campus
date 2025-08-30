@@ -217,5 +217,86 @@ import Slider from "../../components/slider.component.astro";
         </div>
       </div>
     </section>
+
+    <!-- SECTION 5 -->
+    <section class="bg-neutral-500">
+      <div class="relative w-full min-h-dvh">
+        <!-- video de fondo (gif) -->
+        <video
+          id="bgVideo"
+          playsinline
+          autoplay
+          muted
+          loop
+          class="w-full h-full object-cover absolute top-0 left-0 opacity-50"
+        >
+          <source src="/campus/biologia/celulas-4.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+
+        <div class="relative grid gap-20 pt-20 pb-8">
+          <div class="flex max-lg:flex-wrap gap-20 lg:justify-between">
+            <h2 class="text-5xl lg:text-7xl font-extrabold text-zinc-100">
+              Reproducción Sexual
+            </h2>
+            <div
+              class="text-zinc-200 grid justify-start bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-8 rounded"
+            >
+              <h3 class="font-bold text-3xl lg:text-5xl mb-8">
+                Características
+              </h3>
+              <ul class="space-y-4 text-xl lg:text-2xl font-bold">
+                <li>- 2 progenitores (gametos: óvulo y espermatozoide)</li>
+                <li>- Mezcla genética → diversidad</li>
+                <li>- Proceso más lento y complejo</li>
+              </ul>
+            </div>
+          </div>
+          <h3
+            class="text-center font-extrabold tracking-wider text-4xl text-zinc-50/80"
+          >
+            EJEMPLOS:
+          </h3>
+          <div class="flex flex-wrap text-zinc-100 justify-evenly gap-16 px-4">
+            <div>
+              <img
+                src="/campus/biologia/humanos.webp"
+                alt="humanos"
+                class="size-64 lg:size-96 object-cover rounded"
+              />
+              <h4
+                class="text-center text-2xl -translate-y-10 font-extrabold tracking-wider"
+              >
+                Humanos
+              </h4>
+            </div>
+            <div>
+              <img
+                src="/campus/biologia/aves.webp"
+                alt="aves"
+                class="size-64 lg:size-96 object-cover rounded"
+              />
+              <h4
+                class="text-center text-2xl -translate-y-10 font-extrabold tracking-wider"
+              >
+                Aves
+              </h4>
+            </div>
+            <div>
+              <img
+                src="/campus/biologia/insectos.webp"
+                alt="insectos"
+                class="size-64 lg:size-96 object-cover rounded"
+              />
+              <h4
+                class="text-center text-2xl -translate-y-10 font-extrabold tracking-wider"
+              >
+                Insectos
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </Slider>
 </MainLayout>
