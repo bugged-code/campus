@@ -138,7 +138,7 @@ import Slider from "../../components/slider.component.astro";
               <img
                 src="/campus/biologia/bacterias.webp"
                 alt="bacterias"
-                class="size-64 lg:size-72 object-cover rounded"
+                class="size-64 lg:size-96 object-cover rounded"
               />
               <h4
                 class="text-center text-2xl -translate-y-10 font-extrabold tracking-wider"
@@ -150,7 +150,7 @@ import Slider from "../../components/slider.component.astro";
               <img
                 src="/campus/biologia/hongos.webp"
                 alt="hongos"
-                class="size-64 lg:size-72 object-cover rounded"
+                class="size-64 lg:size-96 object-cover rounded"
               />
               <h4
                 class="text-center text-2xl -translate-y-10 font-extrabold tracking-wider"
@@ -162,7 +162,7 @@ import Slider from "../../components/slider.component.astro";
               <img
                 src="/campus/biologia/estrella.webp"
                 alt="estrellas-de-mar"
-                class="size-64 lg:size-72 object-cover rounded"
+                class="size-64 lg:size-96 object-cover rounded"
               />
               <h4
                 class="text-center text-2xl -translate-y-10 font-extrabold tracking-wider"
@@ -175,6 +175,47 @@ import Slider from "../../components/slider.component.astro";
       </div>
     </section>
 
-    <section class="bg-neutral-600"></section>
+    <!-- SECTION 4 -->
+    <section class="bg-neutral-600">
+      <div class="relative w-full min-h-dvh py-20">
+        <!-- video de fondo (gif) -->
+        <video
+          id="bgVideo"
+          playsinline
+          autoplay
+          muted
+          loop
+          class="w-full h-full object-cover absolute top-0 left-0 opacity-50"
+        >
+          <source src="/campus/biologia/celulas-3.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+
+        <div class="relative grid gap-8 md:text-center mb-8">
+          <h1 class="text-5xl lg:text-6xl font-extrabold text-zinc-100">
+            Variantes de Reproducción Asexual
+          </h1>
+          <ul
+            class="grid justify-end text-2xl lg:justify-normal lg:text-center [&>li]:min-w-sm [&>li]:p-8"
+          >
+            <li class="bg-yellow-300/70 transition hover:scale-110">
+              <b>Gemación</b>
+            </li>
+            <li class="bg-green-300/70 transition hover:scale-110">
+              <b>Bipartición</b>
+            </li>
+            <li class="bg-blue-300/70 transition hover:scale-110">
+              <b>Fragmentación</b>
+            </li>
+            <li class="bg-red-300/70 transition hover:scale-110">
+              <b>Esporulación</b>
+            </li>
+            <li class="bg-purple-300/70 transition hover:scale-110">
+              <b>Partenogénesis</b>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </Slider>
 </MainLayout>
