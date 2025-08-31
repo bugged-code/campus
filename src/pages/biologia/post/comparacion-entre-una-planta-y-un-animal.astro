@@ -1,0 +1,134 @@
+---
+import MainLayout from "../../../layouts/main.layout.astro";
+---
+
+<MainLayout title="Av 2 | La célula en mi muro">
+  <div class="w-full min-h-dvh bg-neutral-200 pt-10">
+    <div class="mx-auto w-full max-w-6xl grid gap-16">
+      <h1 class="text-4xl font-bold text-center px-8">
+        Comparación entre una Planta (Suculenta) y un Animal (Lagartija)
+      </h1>
+
+      <section class="flex flex-wrap gap-8 justify-around px-8">
+        <!-- CARD 1 -->
+        <div
+          class="grid gap-8 max-w-md rounded-2xl bg-zinc-800/10 p-8 text-pretty"
+        >
+          <h2 class="text-2xl font-bold text-center">
+            Características de la Lagartija
+          </h2>
+          <video
+            id="bgVideo"
+            playsinline
+            autoplay
+            muted
+            loop
+            class="mx-auto size-96 object-cover rounded"
+          >
+            <source src="/campus/biologia/lagartija.mp4" type="video/mp4" />
+            Tu navegador no soporta videos HTML5.
+          </video>
+
+          <ul class="text-lg space-y-4">
+            <li>
+              <b>Células:</b> Eucariotas animales sin pared celular ni cloroplastos
+            </li>
+            <li>
+              <b>Tejidos:</b> Muscular (movimiento), nervioso (coordinación), epitelial
+              (protección)
+            </li>
+            <li>
+              <b>Sistemas:</b>
+              <ul class="pl-8 space-y-2 mt-2">
+                <li>
+                  <b>Digestivo:</b> Boca, estómago, intestinos (carnívoro/insectívoro)
+                </li>
+                <li><b>Respiratorio:</b> Pulmones simples</li>
+                <li><b>Reproductivo:</b> Sexual ovípara (huevos)</li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            <b>Reproducción:</b> Sexual con fecundación interna. Macho y hembra se
+            aparean
+          </p>
+        </div>
+        <!-- CARD 2 -->
+        <div
+          class="grid gap-8 max-w-md rounded-2xl bg-zinc-800/10 p-8 text-pretty"
+        >
+          <h2 class="text-2xl font-bold text-center">
+            Características de la Suculenta
+          </h2>
+          <video
+            id="bgVideo"
+            playsinline
+            autoplay
+            muted
+            loop
+            class="mx-auto size-96 object-cover rounded"
+          >
+            <source src="/campus/biologia/suculenta.mp4" type="video/mp4" />
+            Tu navegador no soporta videos HTML5.
+          </video>
+
+          <ul class="text-lg space-y-4">
+            <li>
+              <b>Células:</b> Eucariotas vegetales con pared celular y cloroplastos
+              (fotosíntesis)
+            </li>
+            <li>
+              <b>Tejidos:</b>
+              <ul class="pl-8 space-y-2 mt-2">
+                <li>
+                  <b>Epidérmico:</b> (protección), vascular (transporte de savia)
+                </li>
+                <li><b>Parénquima:</b> (almacenamiento de agua)</li>
+              </ul>
+            </li>
+            <li>
+              <b>Sistemas:</b>
+              <ul class="pl-8 space-y-2 mt-2">
+                <li>Radical (raíces), foliar (hojas), floral (reproducción)</li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            <b>Reproducción:</b> Asexual (esquejes, hojas que germinan) y sexual
+            (flores con polinización)
+          </p>
+        </div>
+      </section>
+
+      <section class="px-8 pb-10">
+        <h3 class="text-4xl font-bold uppercase text-center opacity-50 mb-8">
+          Diferencias Clave
+        </h3>
+        <ul class="text-xl [&>li>b]:text-2xl grid gap-4">
+          <li>
+            <b>Células:</b> Vegetales tienen pared celular y cloroplastos; animales
+            no
+          </li>
+          <li>
+            <b>Energía:</b> Plantas son autótrofas (fotosíntesis); animales son heterótrofos
+            (comen otros organismos)
+          </li>
+          <li>
+            <b>Reproducción:</b> Plantas usan asexual y sexual; animales mayormente
+            sexual
+          </li>
+          <li>
+            <b>Movimiento:</b> Animales se mueven; plantas son sésiles (fijas al
+            suelo)
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <footer class="bg-neutral-800 text-zinc-200 p-8 text-xl text-right">
+    <cite
+      >Ambos evolucionaron para sobrevivir en ambientes secos: la suculenta
+      almacena agua, la lagartija busca sombra y se entierra</cite
+    >
+  </footer>
+</MainLayout>
