@@ -3,12 +3,33 @@ import MainLayout from "../layouts/main.layout.astro";
 ---
 
 <MainLayout>
-  <h1>Mi campus</h1>
-  <ul>
+  <h1 class="mb-8 text-4xl font-extrabold tracking-wider uppercase">
+    Mi campus
+  </h1>
+  <ul class="space-y-4 text-xl">
     <li>
-      <a href="/campus/biologia/teoria-de-la-evolucion"
-        >- Teoria de la evolucion</a
+      <a href="/campus/biologia/mi-muro" class="hover:underline">
+        - [Avance 1] Mi muro
+      </a>
+    </li>
+    <li>
+      <a href="/campus/biologia/teoria-de-la-evolucion" class="hover:underline"
+        >- [M1][Actividad 2] Teoria de la evolucion</a
       >
     </li>
-  </ul>
-</MainLayout>
+    <li>
+      <a
+        href="/campus/biologia/metodos-asexuales-y-sexuales"
+        class="hover:underline"
+        >- [M2][Actividad 3] Metodos asexuales y sexuales</a
+      >
+    </li>
+    <li>
+      <a
+        href="/campus/biologia/post/comparacion-entre-una-planta-y-un-animal"
+        class="hover:underline"
+        >- [POST][Avance 2] Comparación entre una planta y un animal</a
+      >
+    </li>
+  </ul></MainLayout
+>
